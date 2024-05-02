@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Application",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "src/app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "Run Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "src/test.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
+            }
+        },
+    ]
+}
